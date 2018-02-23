@@ -1,0 +1,19 @@
+{
+  "name": "sagomini-assignment-server",
+  "version": "1.0.0",
+  "description": "Server API to help with Build Versioning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammadfarooqi/sagomini-assignment-server.git"
+  },
+  "author": "Mohammad Farooqi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammadfarooqi/sagomini-assignment-server/issues"
+  },
+  "homepage": "https://github.com/mohammadfarooqi/sagomini-assignment-server#readme"
+}
