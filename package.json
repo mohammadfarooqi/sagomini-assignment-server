@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "Server API to help with Build Versioning",
   "main": "index.js",
+  "engines": {
+    "node": "8.6.0",
+    "npm": "5.3.0"
+  },
   "scripts": {
     "start": "node index.js",
-    "dev-start": "./node_modules/.bin/nodemon index.js"
+    "dev-start": "./node_modules/.bin/nodemon index.js",
+    "release": "npm version patch && git push heroku master && git push origin master --follow-tags"
   },
   "repository": {
     "type": "git",
