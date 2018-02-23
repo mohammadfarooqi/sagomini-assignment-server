@@ -8,8 +8,8 @@ Note: There were a few things that did not make sense from the requirements for 
 
 ### Available Routes 
 
-- `/read?bundle_id=com.farooqi.mohammad`  
-- `/set`  
+- `api/read?bundle_id=com.farooqi.mohammad`  
+- `api/set`  
 body: `{ "bundle_id": "com.farooqi.mohammad", "new_build_number": 4 }`
-- `/bump`  
+- `api/bump`  
 body: `{ "bundle_id": "com.farooqi.mohammad" }`
