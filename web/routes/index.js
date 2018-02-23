@@ -5,7 +5,7 @@ const bundlesValidator = require('./validators/bundles');
 
 module.exports = function (router) {
   // Bundles Routes
-  router.get  ( '/read' , celebrate(bundlesValidator.create), bundlesRoute.read ); 
-  router.post ( '/set'  , celebrate(bundlesValidator.create), bundlesRoute.set  ); 
-  router.post ( '/bump' , celebrate(bundlesValidator.create), bundlesRoute.bump ); 
+  router.get  ( '/read' , celebrate(bundlesValidator.read)  , bundlesRoute.read ); 
+  router.post ( '/set'  , celebrate(bundlesValidator.set)   , bundlesRoute.set  ); 
+  router.post ( '/bump' , celebrate(bundlesValidator.bump)  , bundlesRoute.bump ); 
 };
