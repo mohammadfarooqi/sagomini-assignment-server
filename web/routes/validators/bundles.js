@@ -2,7 +2,7 @@ const { Joi } = require('celebrate');
 
 // read
 const read = {
-  body: {
+  query: {
     bundle_id: Joi.string().required()
   }
 };
