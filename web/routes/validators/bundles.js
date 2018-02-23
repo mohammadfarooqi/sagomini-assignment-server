@@ -2,14 +2,14 @@ const { Joi } = require('celebrate');
 
 // read
 const read = {
-  params: {
+  body: {
     bundle_id: Joi.string().required()
   }
 };
 
 // set
 const set = {
-  params: {
+  body: {
     bundle_id: Joi.string().required(),
     new_build_number: Joi.number().integer().required()
   }
@@ -17,7 +17,7 @@ const set = {
 
 // bump
 const bump = {
-  params: {
+  body: {
     bundle_id: Joi.string().required()
   }
 };
